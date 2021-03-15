@@ -1,0 +1,185 @@
+$color-header:#7FB7DD;
+
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'footer';
+@import 'mixins';
+
+
+
+
+body{
+    display: grid;
+    background-color: $color-header;
+    height: 100%;
+    min-height: 100vh;
+    margin:0 0.1%;
+    border: solid black;
+    padding-right: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header     header      header" 
+    "aside      aside         nav" 
+    "main       main         main" 
+    "footer     footer      footer";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:320px){
+    
+    body{
+        margin: 0px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% auto auto auto;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+    header{
+        grid-area: header;
+        border: none;
+        margin: 0px;
+        background:$color-header;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    header figure{
+        display: none
+    }
+
+    nav{
+        display: none;
+    }
+
+    aside{
+        grid-area: aside;
+        margin: 0px;
+        border: 1px solid white;
+    }
+
+    .img_menu{
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: $color-header;
+        width: 70%;
+        margin-left: -75%;
+        transition: all 0.8s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid white;
+    }
+
+    #btn_menu:checked ~ .menu{
+        margin: 0;
+    }
+
+    main{
+        margin: 0px;
+        grid-area: main;
+        border: none;
+
+    }
+
+    section{
+        padding:0px;
+    }
+
+    fieldset{
+        padding: 0px;
+    }
+
+    fieldset legend{
+        text-align: center;
+        font-size: 1.5em;
+        display: block;
+        background: $color-header;
+        padding: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        width: 95%;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    .label {
+        background: $color-header;
+        border: none;
+        color: white;
+        font-size: 20px;
+        width: 55%;
+
+    }
+    
+    .input {
+        width: 93%;    
+    }
+
+    #validar{
+        padding: 10px 179px;
+    }
+    
+    .button {
+        margin-bottom: 20px;
+    }
+
+    .foto{
+        width: 130px;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: $color-header;
+        width: 100%;
+        margin: 0px;
+        font-family: Verdana, Geneva, sans-serif;
+        border: none;
+        display: grid;    
+    }
+
+    footer a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+    }
+
+    .footer ul{
+        flex-direction: column;
+    }
+
+    .footer ul li a{
+        display: block;
+        padding: 25px 0px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+

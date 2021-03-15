@@ -1,0 +1,160 @@
+main{
+    grid-area: main;
+    background-color: $color-header;
+  
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 1px black;
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    section{
+        padding: 20px 100px 20px;
+        
+    
+    }
+    
+    fieldset{
+        padding: 5px;
+        background:$color-header;
+        border: solid black;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    fieldset legend{
+        font-size: 30px;
+        padding-bottom: 35px;
+        text-align: center;
+        
+    }
+    
+    .label {
+    
+        border: 5px solid white;
+        display: block;
+        float: left;
+        background: white;
+        font-size: 13px;
+        font-weight: bold;
+        height: 14px;
+        margin: 0px 10px 0 0;
+        padding: 10px 7px;
+        width: 150px;
+    }
+    
+    .input {
+        background-color: $color-header;
+        border: 5px solid white;
+        height: 14px;
+        padding: 10px 7px;
+        width: 300px;
+    
+    }
+    
+    #Color_etiqueta{
+        width: 20px;
+    }
+    
+    #Afecto_impuesto{
+        width: 20px;
+        height: 40px;
+    }
+    
+    #validar{
+        padding: 13px 20px;
+    }
+    
+    #validar:hover{
+        background:$color-header;
+        cursor: pointer;
+    }
+    
+    .estados {
+        font-weight: bold;
+        padding: 0px 30px 0px 0px;
+    }
+    
+    textarea{
+        width: 400px;
+        height: 150px;
+        resize: none;
+    }
+    
+    .foto{
+        height: 14px;
+        margin: 0px 10px 0 0;
+        padding: 10px 7px;
+        width: 350px;
+    }
+    
+    .button {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    
+    .button input{
+        padding: 20px 40px;
+    }
+    
+    .button input:hover{
+        background: $color-header;
+        cursor: pointer;
+    }
+    
+    aside{
+        grid-area: aside;
+        background: $color-header;
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        border: solid 3px black;
+        margin: 10px;
+    }
+    
+    .img_menu{
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        border: 1px solid white;
+    }
+    
+    .img_menu:hover{
+        cursor: pointer;
+        background: $color-header;
+    }
+    
+    .menu ul{
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    .menu li{
+        border: 1px solid white;
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    .menu li a{
+        display: block;
+        padding: 25px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .menu li:hover{
+        cursor: pointer;
+        background: $color-header;
+    }
+    
+    
+    #btn_menu{
+        display: none;
+    }
+    
+    
+}

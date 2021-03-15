@@ -1,0 +1,46 @@
+nav{
+    grid-area: nav;
+    background: $color-header;
+    width: 100%;
+    margin: 10px;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid 3px black;
+
+    .busqueda{
+        display: flex;  
+        align-items: center;
+        border: 1px solid white;
+        padding: 4px;
+    }
+    
+    .busqueda label{
+        height: 14px;
+        margin: 0px 10px 0 0;
+        padding: 10px 7px;
+        width: 150px;
+        text-align: center;
+    }
+    
+    nav img{
+        height: 40px;
+        width: 40px;
+    
+    }
+    
+    nav button{
+        display: block;
+        background: white;
+        border: 10px;
+        height: 60px;
+        width: 72px;
+        padding: 0px 7px;
+        margin: 0px 15px;
+    }
+    
+    #buscar:hover{
+        cursor: pointer;
+    }
+    
+
+}

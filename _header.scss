@@ -1,0 +1,36 @@
+header{
+    grid-area: header;
+    background-color: $color-header;
+    width: 100%;
+    margin: 10px;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid 3px black;
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+
+
+    header h1{
+    text-align: center;
+    
+}
+
+header figure{
+    display: block;
+    padding-left: 320px;
+    align-items:center;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+    clip-path: circle();
+    opacity: 60%;
+}
+
+header figcaption{
+    display: inline-block;
+    padding: 0px 30px;
+}
+}

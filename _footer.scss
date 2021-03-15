@@ -1,0 +1,39 @@
+footer{
+
+    grid-area: footer;
+    background-color: $color-header;
+    width: 100%;
+    margin: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid 3px black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    background: $color-header;
+    cursor: pointer;
+}
+
+.footer ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer li{
+    border: 1px solid white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer li a{
+    display: block;
+    padding: 25px 20px;
+    color: white;
+    text-decoration: none;
+}

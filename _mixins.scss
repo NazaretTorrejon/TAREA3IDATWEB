@@ -1,0 +1,9 @@
+@mixin texto-grande {
+    font-size: large;
+    color: red;
+}
+
+@mixin texto-pequeno {
+    font-size: small;
+    color: red;
+}
